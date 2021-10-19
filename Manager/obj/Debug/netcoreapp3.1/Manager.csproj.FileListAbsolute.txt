@@ -1,0 +1,8 @@
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\bin\Debug\netcoreapp3.1\Manager.deps.json
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\bin\Debug\netcoreapp3.1\Manager.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\bin\Debug\netcoreapp3.1\Manager.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\obj\Debug\netcoreapp3.1\Manager.csprojAssemblyReference.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\obj\Debug\netcoreapp3.1\Manager.AssemblyInfoInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\obj\Debug\netcoreapp3.1\Manager.AssemblyInfo.cs
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\obj\Debug\netcoreapp3.1\Manager.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Manager\obj\Debug\netcoreapp3.1\Manager.pdb

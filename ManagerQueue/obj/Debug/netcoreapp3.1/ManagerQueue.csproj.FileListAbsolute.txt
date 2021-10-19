@@ -1,0 +1,5 @@
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\ManagerQueue\bin\Debug\netcoreapp3.1\ManagerQueue.deps.json
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\ManagerQueue\bin\Debug\netcoreapp3.1\ManagerQueue.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\ManagerQueue\obj\Debug\netcoreapp3.1\ManagerQueue.csprojAssemblyReference.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\ManagerQueue\obj\Debug\netcoreapp3.1\ManagerQueue.AssemblyInfoInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\ManagerQueue\obj\Debug\netcoreapp3.1\ManagerQueue.AssemblyInfo.cs
