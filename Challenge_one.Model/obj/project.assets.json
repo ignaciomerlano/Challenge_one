@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
+      "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
       "projectName": "Challenge_one.Model",
-      "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
+      "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
       "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\obj\\",
+      "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

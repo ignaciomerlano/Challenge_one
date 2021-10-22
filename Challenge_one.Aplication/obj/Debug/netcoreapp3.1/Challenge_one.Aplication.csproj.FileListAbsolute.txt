@@ -11,3 +11,16 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.pdb
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge one\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.Aplication.deps.json
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.Aplication.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.Aplication.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.Model.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.Model.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.csprojAssemblyReference.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.AssemblyInfoInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.AssemblyInfo.cs
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.csproj.CopyComplete
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.pdb

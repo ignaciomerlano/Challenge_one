@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_one.Aplication.Command
 {
-    class SendFinishReservationCommandHandler : IRequestHandler<SendFinishReservationCommand, Reservation>
+    public class SendFinishReservationCommandHandler : IRequestHandler<SendFinishReservationCommand, Reservation>
     {
         private readonly IUpdateReservationQueue _updateReservationQueue;
         private readonly IMediator _mediator;
@@ -27,10 +27,35 @@ namespace Challenge_one.Aplication.Command
             var query = new GetReservationByIdQuery(request.Id);
             Reservation reservation = await _mediator.Send(query);
 
-            reservation.Cost = 150;
+            decimal hourlyPrice = 3;
+            decimal dayPrice = 57;
 
-            //logic
-            //update slot queue?
+            decimal reservationCost = 0;
+
+            var now = DateTime.Now;
+            TimeSpan reservationTime = now.Subtract(reservation.CheckIn);
+
+            if (reservationTime.TotalMinutes <= new TimeSpan(3, 0, 0).TotalMinutes) //The first three hours count as one
+            {
+                reservationCost = hourlyPrice;
+            }
+            else if (reservationTime.TotalMinutes > new TimeSpan(3, 0, 0).TotalMinutes && reservationTime.TotalMinutes <= new TimeSpan(8, 0, 0).TotalMinutes)
+            {
+                reservationCost = hourlyPrice + hourlyPrice * (reservationTime.Hours - 3);
+            } 
+            else if (reservationTime.TotalMinutes > new TimeSpan(8, 0, 0).TotalMinutes && reservationTime.TotalMinutes < new TimeSpan(24, 0, 0).TotalMinutes) //After eight hours the fee is the amount of one day
+            {
+                reservationCost = dayPrice;
+            } 
+            else if (reservationTime.TotalMinutes > new TimeSpan(24, 0, 0).TotalMinutes)
+            {
+                int hoursDays = reservationTime.Days * 24;
+                int totalDays = hoursDays < reservationTime.TotalHours ? reservationTime.Days+1 : hoursDays;
+                reservationCost = dayPrice * totalDays;
+            }
+
+            reservation.Cost = reservationCost;
+            reservation.CheckOut = now;
 
             await _updateReservationQueue.SendUpdateReservation(reservation);
 

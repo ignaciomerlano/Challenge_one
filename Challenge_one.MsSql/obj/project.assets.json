@@ -1094,11 +1094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
+      "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
       "projectName": "Challenge_one.MsSql",
-      "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
+      "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
       "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\obj\\",
+      "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1118,8 +1118,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
-              "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
+            "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
+              "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
             }
           }
         }

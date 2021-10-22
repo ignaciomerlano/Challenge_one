@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.Aplication", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.Model", "Challenge_one.Model\Challenge_one.Model.csproj", "{9C03EFB1-828A-43DE-8CE6-CA04413979DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge_one.ManagerQueue", "Challenge_one.Manager\Challenge_one.ManagerQueue.csproj", "{1D515D4E-E6ED-490D-96E3-7DC1E47BE4C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.ManagerQueue", "Challenge_one.Manager\Challenge_one.ManagerQueue.csproj", "{1D515D4E-E6ED-490D-96E3-7DC1E47BE4C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Challenge_one.MsSql", "Challenge_one.MsSql\Challenge_one.MsSql.csproj", "{A910B6F1-EF25-4657-AB36-40D654D31E88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.MsSql", "Challenge_one.MsSql\Challenge_one.MsSql.csproj", "{A910B6F1-EF25-4657-AB36-40D654D31E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestChallenge_one", "XUnitTestChallenge_one\XUnitTestChallenge_one.csproj", "{291B3CBF-6C27-42DD-A47B-92AB614356BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A910B6F1-EF25-4657-AB36-40D654D31E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A910B6F1-EF25-4657-AB36-40D654D31E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A910B6F1-EF25-4657-AB36-40D654D31E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{291B3CBF-6C27-42DD-A47B-92AB614356BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291B3CBF-6C27-42DD-A47B-92AB614356BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291B3CBF-6C27-42DD-A47B-92AB614356BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291B3CBF-6C27-42DD-A47B-92AB614356BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

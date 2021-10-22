@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj": {}
+    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj": {
+    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj",
         "projectName": "Challenge_one.Aplication",
-        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj",
+        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj",
         "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\obj\\",
+        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
-                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
+              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
+                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
               },
-              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
-                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj"
+              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
+                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj": {
+    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj",
+        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj",
         "projectName": "Challenge_one.ManagerQueue",
-        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj",
+        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Manager\\Challenge_one.ManagerQueue.csproj",
         "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Manager\\obj\\",
+        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Manager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -120,11 +120,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj": {
-                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj"
+              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj": {
+                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj"
               },
-              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
-                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj"
+              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
+                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj"
               }
             }
           }
@@ -182,14 +182,14 @@
         }
       }
     },
-    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
+    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
+        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
         "projectName": "Challenge_one.Model",
-        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
+        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj",
         "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\obj\\",
+        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -238,14 +238,14 @@
         }
       }
     },
-    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
+    "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
+        "projectUniqueName": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
         "projectName": "Challenge_one.MsSql",
-        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
+        "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\Challenge_one.MsSql.csproj",
         "packagesPath": "C:\\Users\\ignacio.merlano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.MsSql\\obj\\",
+        "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.MsSql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -265,8 +265,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
-                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge one\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
+              "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj": {
+                "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one.Model\\Challenge_one.Model.csproj"
               }
             }
           }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_one.Aplication.Command
 {
-    class UpdateReservationCommandHandler : IRequestHandler<UpdateReservationCommand>
+    public class UpdateReservationCommandHandler : IRequestHandler<UpdateReservationCommand>
     {
         private readonly IReservationRepository _reservationRepository;
 
