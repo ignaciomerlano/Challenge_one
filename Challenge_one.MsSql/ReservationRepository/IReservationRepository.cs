@@ -8,8 +8,9 @@ namespace Challenge_one.MsSql.ReservationRepository
 {
     public interface IReservationRepository
     {
+        Task AddReservation(Reservation reservation);
         Task UpdateReservation(Reservation reservation);
-        Task<Reservation> GetReservationById(Guid Id);
+        Task<Reservation> GetReservationById(int Id);
 
     }
 }

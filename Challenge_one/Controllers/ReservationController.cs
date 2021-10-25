@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Challenge_one.Model;
 using Challenge_one.Aplication.Command;
 using Challenge_one.Aplication.Queries;
+using System.Net.Http;
 
 namespace Challenge_one.Controllers
 {
@@ -23,10 +24,24 @@ namespace Challenge_one.Controllers
         }
 
         [HttpPost]
-        public async Task<Reservation> FinishReservation(Guid id)
+        public async Task<HttpResponseMessage> SaveReservation(Reservation reservation)
         {
-            var command = new SendFinishReservationCommand(id);
+            var command = new SendReservationCommand(reservation);
             return await _mediator.Send(command);
+        }
+
+        [HttpPost]
+        public async Task<Reservation> FinishReservation(int Id)
+        {
+            var command = new SendFinishReservationCommand(Id);
+            return await _mediator.Send(command);
+        }
+
+        [HttpGet("{Id}")]
+        public async Task<Reservation> GetReservation(int Id)
+        {
+            var query = new GetReservationByIdQuery(Id);
+            return await _mediator.Send(query);
         }
     }
 }

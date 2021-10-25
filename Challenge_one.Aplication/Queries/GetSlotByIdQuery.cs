@@ -8,8 +8,8 @@ namespace Challenge_one.Aplication.Queries
 {
     public class GetSlotByIdQuery : IRequest<Slot>
     {
-        public Guid Id { get; }
-        public GetSlotByIdQuery(Guid id)
+        public int Id { get; }
+        public GetSlotByIdQuery(int id)
         {
             Id = id;
         }

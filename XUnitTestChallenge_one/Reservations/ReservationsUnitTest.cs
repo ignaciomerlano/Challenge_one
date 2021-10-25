@@ -28,7 +28,7 @@ namespace XUnitTestChallenge_one
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);
@@ -48,7 +48,7 @@ namespace XUnitTestChallenge_one
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);
@@ -69,7 +69,7 @@ namespace XUnitTestChallenge_one
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);
@@ -89,7 +89,7 @@ namespace XUnitTestChallenge_one
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);
@@ -109,7 +109,7 @@ namespace XUnitTestChallenge_one
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);
@@ -123,13 +123,13 @@ namespace XUnitTestChallenge_one
         }
 
         [Fact]
-        public async Task IfReservationTimeIs2Days_CostShoulBe57()
+        public async Task IfReservationTimeIs2Days_CostShoulBe114()
         {
             //Arrange
             _mediator = new Mock<IMediator>();
             _updateReservationQueue = new Mock<IUpdateReservationQueue>();
 
-            var command = new SendFinishReservationCommand(It.IsAny<Guid>());
+            var command = new SendFinishReservationCommand(It.IsAny<int>());
             var _sut = new SendFinishReservationCommandHandler(_updateReservationQueue.Object, _mediator.Object);
             var reservation = new Reservation();
             _mediator.Setup(x => x.Send(It.IsAny<GetReservationByIdQuery>(), It.IsAny<CancellationToken>())).ReturnsAsync(reservation);

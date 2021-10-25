@@ -38,8 +38,10 @@ namespace Challenge_one.Manager
         static void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationDependencies(Configuration, false);
-            services.AddAsyncMessageHandlerSingleton<SlotsEventHandler>("Slot")
-                    .AddAsyncMessageHandlerSingleton<UpdateReservationsEventHandler>("UpdateReservation");
+            services.AddAsyncMessageHandlerSingleton<SlotsEventHandler>("AddSlot")
+                    .AddAsyncMessageHandlerSingleton<SlotsEventHandler>("UpdateSlot")
+                    .AddAsyncMessageHandlerSingleton<UpdateReservationEventHandler>("UpdateReservation")
+                    .AddAsyncMessageHandlerSingleton<AddReservationEventHandler>("AddReservation");
         }
     }
 }

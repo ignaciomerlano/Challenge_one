@@ -31,8 +31,8 @@ namespace Challenge_one.MsSql.SlotRepository
                 command.Parameters.AddWithValue("@UpdatedDate", slot.UpdatedDate);
                 command.Parameters.AddWithValue("@CreatedDate", slot.CreatedDate);
                 await conn.OpenAsync();
-
                 await command.ExecuteNonQueryAsync();
+                await conn.CloseAsync();
             }
         }
 
@@ -51,18 +51,20 @@ namespace Challenge_one.MsSql.SlotRepository
                 while (reader.Read())
                 {
                     slot = new Slot();
-                    slot.SlotId = Guid.Parse(reader["SlotId"].ToString());
-                    slot.Number = int.Parse(reader["Number"].ToString());
-                    slot.IsAvailable = bool.Parse(reader["IsAvailable"].ToString());
-                    slot.UpdatedDate = DateTime.Parse(reader["UpdatedDate"].ToString());
-                    slot.CreatedDate = DateTime.Parse(reader["CreatedDate"].ToString());
+                    slot.Id = (int)reader["Id"];
+                    slot.SlotId = (Guid)reader["SlotId"];
+                    slot.Number = (int)reader["Number"];
+                    slot.IsAvailable = (bool)reader["IsAvailable"];
+                    slot.UpdatedDate = (DateTime)reader["UpdatedDate"];
+                    slot.CreatedDate = (DateTime)reader["CreatedDate"];
                     results.Add(slot);
                 }
+                await conn.CloseAsync();
                 return results;
             }
         }
 
-        public async Task<Slot> GetSlotById(Guid Id)
+        public async Task<Slot> GetSlotById(int Id)
         {
             using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
             {
@@ -70,18 +72,20 @@ namespace Challenge_one.MsSql.SlotRepository
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                command.Parameters.AddWithValue("@SlotId", Id);
+                command.Parameters.AddWithValue("@Id", Id);
                 await conn.OpenAsync();
                 SqlDataReader reader = await command.ExecuteReaderAsync();
                 Slot slot = new Slot();
                 while (reader.Read())
                 {
-                    slot.SlotId = Guid.Parse(reader["SlotId"].ToString());
-                    slot.Number = int.Parse(reader["Number"].ToString());
-                    slot.IsAvailable = bool.Parse(reader["IsAvailable"].ToString());
-                    slot.UpdatedDate = DateTime.Parse(reader["UpdatedDate"].ToString());
-                    slot.CreatedDate = DateTime.Parse(reader["CreatedDate"].ToString());
+                    slot.Id = (int)reader["Id"];
+                    slot.SlotId = (Guid)reader["SlotId"];
+                    slot.Number = (int)reader["Number"];
+                    slot.IsAvailable = (bool)reader["IsAvailable"];
+                    slot.UpdatedDate = (DateTime)reader["UpdatedDate"];
+                    slot.CreatedDate = (DateTime)reader["CreatedDate"];
                 }
+                await conn.CloseAsync();
                 return slot;
             }
         }

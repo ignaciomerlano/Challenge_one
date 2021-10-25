@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Challenge_one.ManagerQueue
 {
-    public class UpdateReservationsEventHandler : IAsyncMessageHandler
+    public class AddReservationEventHandler : IAsyncMessageHandler
     {
         private readonly IMediator _mediator;
 
-        public UpdateReservationsEventHandler(IMediator mediator)
+        public AddReservationEventHandler(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -24,8 +24,8 @@ namespace Challenge_one.ManagerQueue
         {
             var message = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
             var reservation = JsonConvert.DeserializeObject<Reservation>(message);
-            var updateReservationCommand = new UpdateReservationCommand(reservation);
-            await _mediator.Send(updateReservationCommand);
+            var addReservationCommand = new AddReservationCommand(reservation);
+            await _mediator.Send(addReservationCommand);
         }
     }
 }

@@ -9,8 +9,8 @@ namespace Challenge_one.Aplication.Command
 {
     public class SendFinishReservationCommand : IRequest<Reservation>
     {
-        public Guid Id { get; }
-        public SendFinishReservationCommand(Guid id)
+        public int Id { get; }
+        public SendFinishReservationCommand(int id)
         {
             Id = id;
         }

@@ -9,8 +9,8 @@ namespace Challenge_one.Aplication.Queries
 {
     public class GetReservationByIdQuery : IRequest<Reservation>
     {
-        public Guid Id { get; }
-        public GetReservationByIdQuery(Guid id)
+        public int Id { get; }
+        public GetReservationByIdQuery(int id)
         {
             Id = id;
         }

@@ -4,6 +4,7 @@ namespace Challenge_one.Model
 {
     public class Slot
     {
+        public int Id { get; set; }
         public Guid SlotId { get; set; }
         public int Number { get; set; }
         public bool IsAvailable { get; set; }

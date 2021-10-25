@@ -1,5 +1,6 @@
 ﻿using Challenge_one.Aplication.Queries;
 using Challenge_one.Aplication.ReservationQueue;
+using Challenge_one.Aplication.SlotQueue;
 using Challenge_one.Model;
 using Challenge_one.MsSql.ReservationRepository;
 using MediatR;
@@ -14,12 +15,14 @@ namespace Challenge_one.Aplication.Command
     public class SendFinishReservationCommandHandler : IRequestHandler<SendFinishReservationCommand, Reservation>
     {
         private readonly IUpdateReservationQueue _updateReservationQueue;
+        private readonly ISlotQueue _slotQueue;
         private readonly IMediator _mediator;
 
-        public SendFinishReservationCommandHandler(IUpdateReservationQueue updateReservationQueue, IMediator mediator)
+        public SendFinishReservationCommandHandler(IUpdateReservationQueue updateReservationQueue, ISlotQueue slotQueue, IMediator mediator)
         {
             _updateReservationQueue = updateReservationQueue;
             _mediator = mediator;
+            _slotQueue = slotQueue;
         }
 
         public async Task<Reservation> Handle(SendFinishReservationCommand request, CancellationToken cancellationToken)
@@ -58,6 +61,13 @@ namespace Challenge_one.Aplication.Command
             reservation.CheckOut = now;
 
             await _updateReservationQueue.SendUpdateReservation(reservation);
+
+            //Update slot to IsAvailable = true
+            var slotQuery = new GetSlotByIdQuery(reservation.Slot.Id);
+            var slot = await _mediator.Send(slotQuery);
+            slot.IsAvailable = true;
+            slot.UpdatedDate = DateTime.Now;
+            await _slotQueue.SendSlot(slot);
 
             return reservation;
         }

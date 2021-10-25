@@ -31,6 +31,13 @@ namespace Challenge_one.Controllers
             return slot.SlotId;
         }
 
+        [HttpPost]
+        public async Task<Slot> UpdateSlot(Slot slot)
+        {
+            var command = new SendUpdateSlotCommand(slot);
+            return await _mediator.Send(command);
+        }
+
         [HttpGet]
         public async Task<List<Slot>> GetSlots()
         {
@@ -45,10 +52,10 @@ namespace Challenge_one.Controllers
             return await _mediator.Send(query);
         }
 
-        [HttpGet("{Id:guid}")]
-        public async Task<Slot> GetSlot(Guid id)
+        [HttpGet("{Id}")]
+        public async Task<Slot> GetSlot(int Id)
         {
-            var query = new GetSlotByIdQuery(id);
+            var query = new GetSlotByIdQuery(Id);
             return await _mediator.Send(query);
         }
     }

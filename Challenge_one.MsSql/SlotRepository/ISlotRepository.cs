@@ -10,6 +10,6 @@ namespace Challenge_one.MsSql.SlotRepository
     {
         Task AddSlot(Slot slot);
         Task<List<Slot>> GetSlots();
-        Task<Slot> GetSlotById(Guid Id);
+        Task<Slot> GetSlotById(int Id);
     }
 }

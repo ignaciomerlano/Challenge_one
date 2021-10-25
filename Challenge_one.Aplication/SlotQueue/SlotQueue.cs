@@ -21,7 +21,7 @@ namespace Challenge_one.Aplication.SlotQueue
         {
             await _queueService.SendAsync(
             @object: slot,
-            exchangeName: "exchange.addslot",
+            exchangeName: "exchange.slot",
             routingKey: "AddSlot");
         }
     }
