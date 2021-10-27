@@ -1,0 +1,35 @@
+
+-- Save Reservation Request
+
+{
+  "carLicensePlate": "HHH666",
+  "carType": "Car",
+  "carColor": "Red",
+  "slot": {
+    "SlotId": "3BA2AA9C-1E8F-486E-B4F9-23DEA1606ABE"
+  },
+  "checkIn": "2021-10-25T15:53:53.047Z",
+  "checkOut": null,
+  "cost": null,
+  "updatedDate": "2021-10-25T15:53:53.047Z",
+  "createdDate": "2021-10-25T15:53:53.047Z"
+}
+
+-- Add Slot Request
+
+{
+  "number": 1,
+  "isAvailable": true,
+  "updatedDate": "2021-10-27T15:52:05.646Z",
+  "createdDate": "2021-10-27T15:52:05.646Z"
+}
+
+-- Update slot Request
+
+{
+  "slotId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "number": 1,
+  "isAvailable": false,
+  "updatedDate": "2021-10-27T15:52:28.263Z",
+  "createdDate": "2021-10-27T15:52:28.263Z"
+}
