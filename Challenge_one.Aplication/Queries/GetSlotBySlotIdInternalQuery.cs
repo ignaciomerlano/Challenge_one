@@ -6,12 +6,12 @@ using System.Text;
 
 namespace Challenge_one.Aplication.Queries
 {
-    public class GetSlotByIdQuery : IRequest<Slot>
+    public class GetSlotBySlotIdInternalQuery : IRequest<Slot>
     {
-        public int Id { get; }
-        public GetSlotByIdQuery(int id)
+        public Guid SlotId { get; }
+        public GetSlotBySlotIdInternalQuery(Guid slotId)
         {
-            Id = id;
+            SlotId = slotId;
         }
     }
 }

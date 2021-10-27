@@ -39,7 +39,7 @@ namespace Challenge_one.Manager
         {
             services.AddApplicationDependencies(Configuration, false);
             services.AddAsyncMessageHandlerSingleton<SlotsEventHandler>("AddSlot")
-                    .AddAsyncMessageHandlerSingleton<SlotsEventHandler>("UpdateSlot")
+                    .AddAsyncMessageHandlerSingleton<UpdateSlotEventHandler>("UpdateSlot")
                     .AddAsyncMessageHandlerSingleton<UpdateReservationEventHandler>("UpdateReservation")
                     .AddAsyncMessageHandlerSingleton<AddReservationEventHandler>("AddReservation");
         }

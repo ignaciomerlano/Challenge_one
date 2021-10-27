@@ -35,9 +35,9 @@ namespace Challenge_one.Infrastructure
         {
             var info = new OpenApiInfo()
             {
-                Title = "Order Api",
+                Title = "Parking Api",
                 Version = description.ApiVersion.ToString(),
-                Contact = new OpenApiContact() { Name = "Jhon Doe", Email = "Jhon.Doe@bydeluxe.com" }
+                Contact = new OpenApiContact() { Name = "Ignacio Merlano", Email = "ignacio.merlano@globant.com" }
             };
 
             if (description.IsDeprecated)

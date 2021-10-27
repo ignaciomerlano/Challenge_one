@@ -22,11 +22,11 @@ namespace Challenge_one.Controllers
             _mediator = mediator;
         }
 
-        //[HttpGet("{AppKey}")]
-        //public async Task<Reservation> GetSetting(string AppKey)
-        //{
-        //    var query = new GetReservationByIdQuery(Id);
-        //    return await _mediator.Send(query);
-        //}
+        [HttpGet("{AppKey}")]
+        public async Task<AppSetting> GetSetting(string AppKey)
+        {
+            var query = new GetAppSettingValueQuery(AppKey);
+            return await _mediator.Send(query);
+        }
     }
 }

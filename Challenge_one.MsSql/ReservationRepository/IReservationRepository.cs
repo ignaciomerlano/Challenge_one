@@ -11,6 +11,6 @@ namespace Challenge_one.MsSql.ReservationRepository
         Task AddReservation(Reservation reservation);
         Task UpdateReservation(Reservation reservation);
         Task<Reservation> GetReservationById(int Id);
-
+        Task<Reservation> GetReservationById(Guid Id);
     }
 }

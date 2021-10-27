@@ -15,23 +15,26 @@ namespace Challenge_one.Aplication.Command
     public class SendFinishReservationCommandHandler : IRequestHandler<SendFinishReservationCommand, Reservation>
     {
         private readonly IUpdateReservationQueue _updateReservationQueue;
-        private readonly ISlotQueue _slotQueue;
         private readonly IMediator _mediator;
 
-        public SendFinishReservationCommandHandler(IUpdateReservationQueue updateReservationQueue, ISlotQueue slotQueue, IMediator mediator)
+        public SendFinishReservationCommandHandler(IUpdateReservationQueue updateReservationQueue, IMediator mediator)
         {
             _updateReservationQueue = updateReservationQueue;
-            _mediator = mediator;
-            _slotQueue = slotQueue;
+            _mediator = mediator;        
         }
 
         public async Task<Reservation> Handle(SendFinishReservationCommand request, CancellationToken cancellationToken)
         {
-            var query = new GetReservationByIdQuery(request.Id);
+            var query = new GetReservationByReservationIdQuery(request.ReservationId);
             Reservation reservation = await _mediator.Send(query);
 
-            decimal hourlyPrice = 3;
-            decimal dayPrice = 57;
+            var appSettingPriceHourValueQuery = new GetAppSettingValueQuery("price.hour");
+            AppSetting appSettingPrieceHour = await _mediator.Send(appSettingPriceHourValueQuery);
+            decimal hourlyPrice = Decimal.Parse(appSettingPrieceHour.AppValue);
+
+            var appSettingPriceDayValueQuery = new GetAppSettingValueQuery("price.day");
+            AppSetting appSettingPrieceDay = await _mediator.Send(appSettingPriceDayValueQuery);
+            decimal dayPrice = Decimal.Parse(appSettingPrieceDay.AppValue);
 
             decimal reservationCost = 0;
 
@@ -63,11 +66,12 @@ namespace Challenge_one.Aplication.Command
             await _updateReservationQueue.SendUpdateReservation(reservation);
 
             //Update slot to IsAvailable = true
-            var slotQuery = new GetSlotByIdQuery(reservation.Slot.Id);
-            var slot = await _mediator.Send(slotQuery);
+            var slotQuery = new GetSlotByIdInternalQuery(reservation.Slot.Id);
+            Slot slot = await _mediator.Send(slotQuery);
             slot.IsAvailable = true;
             slot.UpdatedDate = DateTime.Now;
-            await _slotQueue.SendSlot(slot);
+            var updateSlotCommand = new SendUpdateSlotCommand(slot);
+            await _mediator.Send(updateSlotCommand);
 
             return reservation;
         }

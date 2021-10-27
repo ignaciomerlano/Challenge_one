@@ -36,6 +36,25 @@ namespace Challenge_one.MsSql.SlotRepository
             }
         }
 
+        public async Task UpdateSlot(Slot slot)
+        {
+            using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
+            {
+                SqlCommand command = new SqlCommand("UpdateSlot", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@SlotId", slot.SlotId);
+                command.Parameters.AddWithValue("@Number", slot.Number);
+                command.Parameters.AddWithValue("@IsAvailable", slot.IsAvailable);
+                command.Parameters.AddWithValue("@UpdatedDate", slot.UpdatedDate);
+                command.Parameters.AddWithValue("@CreatedDate", slot.CreatedDate);
+                await conn.OpenAsync();
+                await command.ExecuteNonQueryAsync();
+                await conn.CloseAsync();
+            }
+        }
+
         public async Task<List<Slot>> GetSlots()
         {
             using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
@@ -51,7 +70,7 @@ namespace Challenge_one.MsSql.SlotRepository
                 while (reader.Read())
                 {
                     slot = new Slot();
-                    slot.Id = (int)reader["Id"];
+                    //slot.Id = (int)reader["Id"];
                     slot.SlotId = (Guid)reader["SlotId"];
                     slot.Number = (int)reader["Number"];
                     slot.IsAvailable = (bool)reader["IsAvailable"];
@@ -64,7 +83,33 @@ namespace Challenge_one.MsSql.SlotRepository
             }
         }
 
-        public async Task<Slot> GetSlotById(int Id)
+        public async Task<Slot> GetSlotBySlotIdInternal(Guid Id)
+        {
+            using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
+            {
+                SqlCommand command = new SqlCommand("GetSlotByGuidId", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@Id", Id);
+                await conn.OpenAsync();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+                Slot slot = new Slot();
+                while (reader.Read())
+                {
+                    slot.Id = (int)reader["Id"];
+                    slot.SlotId = (Guid)reader["SlotId"];
+                    slot.Number = (int)reader["Number"];
+                    slot.IsAvailable = (bool)reader["IsAvailable"];
+                    slot.UpdatedDate = (DateTime)reader["UpdatedDate"];
+                    slot.CreatedDate = (DateTime)reader["CreatedDate"];
+                }
+                await conn.CloseAsync();
+                return slot;
+            }
+        }
+
+        public async Task<Slot> GetSlotByIdInternal(int Id)
         {
             using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
             {
@@ -79,6 +124,31 @@ namespace Challenge_one.MsSql.SlotRepository
                 while (reader.Read())
                 {
                     slot.Id = (int)reader["Id"];
+                    slot.SlotId = (Guid)reader["SlotId"];
+                    slot.Number = (int)reader["Number"];
+                    slot.IsAvailable = (bool)reader["IsAvailable"];
+                    slot.UpdatedDate = (DateTime)reader["UpdatedDate"];
+                    slot.CreatedDate = (DateTime)reader["CreatedDate"];
+                }
+                await conn.CloseAsync();
+                return slot;
+            }
+        }
+
+        public async Task<Slot> GetSlotBySlotId(Guid Id)
+        {
+            using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
+            {
+                SqlCommand command = new SqlCommand("GetSlotByGuidId", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@Id", Id);
+                await conn.OpenAsync();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+                Slot slot = new Slot();
+                while (reader.Read())
+                {
                     slot.SlotId = (Guid)reader["SlotId"];
                     slot.Number = (int)reader["Number"];
                     slot.IsAvailable = (bool)reader["IsAvailable"];

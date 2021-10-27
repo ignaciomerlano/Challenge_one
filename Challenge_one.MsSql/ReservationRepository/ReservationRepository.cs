@@ -102,5 +102,42 @@ namespace Challenge_one.MsSql.ReservationRepository
                 return reservation;
             }
         }
+
+        public async Task<Reservation> GetReservationById(Guid Id)
+        {
+            using (SqlConnection conn = new SqlConnection("Server=localhost\\SQLEXPRESS;Database=Challenge_oneDB;Trusted_Connection=True;"))
+            {
+                SqlCommand command = new SqlCommand("GetReservationByGuidId", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@Id", Id);
+                await conn.OpenAsync();
+                SqlDataReader reader = await command.ExecuteReaderAsync();
+                Reservation reservation = new Reservation();
+                while (reader.Read())
+                {
+                    reservation.ReservationId = (Guid)reader["ReservationId"];
+                    reservation.CarLicensePlate = reader["CarLicensePlate"].ToString();
+                    reservation.CarType = reader["CarType"].ToString();
+                    reservation.CarColor = reader["CarColor"].ToString();
+                    reservation.CheckIn = (DateTime)reader["CheckIn"];
+                    if (reader["CheckOut"] != DBNull.Value)
+                    {
+                        reservation.CheckOut = (DateTime)reader["CheckOut"];
+                    }
+                    if (reader["Cost"] != DBNull.Value)
+                    {
+                        reservation.Cost = (decimal)reader["Cost"];
+                    }
+                    var slot = new Slot { Id = (int)reader["SlotId"] };
+                    reservation.Slot = slot;
+                    reservation.UpdatedDate = (DateTime)reader["UpdatedDate"];
+                    reservation.CreatedDate = (DateTime)reader["CreatedDate"];
+                }
+                await conn.CloseAsync();
+                return reservation;
+            }
+        }
     }
 }

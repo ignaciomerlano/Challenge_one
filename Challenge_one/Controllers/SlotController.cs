@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Challenge_one.Controllers
@@ -31,7 +32,7 @@ namespace Challenge_one.Controllers
             return slot.SlotId;
         }
 
-        [HttpPost]
+        [HttpPut]
         public async Task<Slot> UpdateSlot(Slot slot)
         {
             var command = new SendUpdateSlotCommand(slot);
@@ -52,10 +53,10 @@ namespace Challenge_one.Controllers
             return await _mediator.Send(query);
         }
 
-        [HttpGet("{Id}")]
-        public async Task<Slot> GetSlot(int Id)
+        [HttpGet("{SlotId:guid}")]
+        public async Task<Slot> GetSlot(Guid SlotId)
         {
-            var query = new GetSlotByIdQuery(Id);
+            var query = new GetSlotBySlotIdQuery(SlotId);
             return await _mediator.Send(query);
         }
     }

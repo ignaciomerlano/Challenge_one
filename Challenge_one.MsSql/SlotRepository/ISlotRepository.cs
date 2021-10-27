@@ -9,7 +9,10 @@ namespace Challenge_one.MsSql.SlotRepository
     public interface ISlotRepository
     {
         Task AddSlot(Slot slot);
+        Task UpdateSlot(Slot slot);
         Task<List<Slot>> GetSlots();
-        Task<Slot> GetSlotById(int Id);
+        Task<Slot> GetSlotByIdInternal(int Id);
+        Task<Slot> GetSlotBySlotIdInternal(Guid Id);
+        Task<Slot> GetSlotBySlotId(Guid Id);
     }
 }

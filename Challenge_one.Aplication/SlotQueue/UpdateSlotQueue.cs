@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Challenge_one.Aplication.SlotQueue
 {
-    class UpdateSlotQueue : IUpdateSlotQueue
+    public class UpdateSlotQueue : IUpdateSlotQueue
     {
         readonly IQueueService _queueService;
 

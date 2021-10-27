@@ -1,5 +1,6 @@
 ﻿using Challenge_one.Aplication.ReservationQueue;
 using Challenge_one.Aplication.SlotQueue;
+using Challenge_one.MsSql.AppSettingRepository;
 using Challenge_one.MsSql.ReservationRepository;
 using Challenge_one.MsSql.SlotRepository;
 using MediatR;
@@ -37,10 +38,12 @@ namespace Challenge_one.Aplication.Extensions
 
             services.AddMediatR(typeof(IApplicationAnchor));
             services.AddScoped<ISlotQueue, SlotQueue.SlotQueue>();
+            services.AddScoped<IUpdateSlotQueue, UpdateSlotQueue>();
             services.AddScoped<IUpdateReservationQueue, UpdateReservationQueue>();
             services.AddScoped<IAddReservationQueue, AddReservationQueue>();
             services.AddScoped<ISlotRepository, SlotRepository>();
             services.AddScoped<IReservationRepository, ReservationRepository>();
+            services.AddScoped<IAppSettingRepository, AppSettingRepository>();
             return services;
         }
 

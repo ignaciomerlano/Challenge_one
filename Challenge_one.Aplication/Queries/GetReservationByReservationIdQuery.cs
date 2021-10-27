@@ -4,13 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-
-namespace Challenge_one.Aplication.Command
+namespace Challenge_one.Aplication.Queries
 {
-    public class SendFinishReservationCommand : IRequest<Reservation>
+    public class GetReservationByReservationIdQuery : IRequest<Reservation>
     {
         public Guid ReservationId { get; }
-        public SendFinishReservationCommand(Guid reservationId)
+        public GetReservationByReservationIdQuery(Guid reservationId)
         {
             ReservationId = reservationId;
         }

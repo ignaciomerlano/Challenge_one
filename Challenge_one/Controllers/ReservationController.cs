@@ -26,21 +26,22 @@ namespace Challenge_one.Controllers
         [HttpPost]
         public async Task<HttpResponseMessage> SaveReservation(Reservation reservation)
         {
+            reservation.ReservationId = Guid.NewGuid();
             var command = new SendReservationCommand(reservation);
             return await _mediator.Send(command);
         }
 
-        [HttpPost]
-        public async Task<Reservation> FinishReservation(int Id)
+        [HttpPut]
+        public async Task<Reservation> FinishReservation(Guid ReservationId)
         {
-            var command = new SendFinishReservationCommand(Id);
+            var command = new SendFinishReservationCommand(ReservationId);
             return await _mediator.Send(command);
         }
 
-        [HttpGet("{Id}")]
-        public async Task<Reservation> GetReservation(int Id)
+        [HttpGet("{ReservationId:guid}")]
+        public async Task<Reservation> GetReservation(Guid ReservationId)
         {
-            var query = new GetReservationByIdQuery(Id);
+            var query = new GetReservationByReservationIdQuery(ReservationId);
             return await _mediator.Send(query);
         }
     }

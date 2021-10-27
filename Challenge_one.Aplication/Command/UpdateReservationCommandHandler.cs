@@ -1,5 +1,4 @@
-﻿using Challenge_one.Model;
-using Challenge_one.MsSql.ReservationRepository;
+﻿using Challenge_one.MsSql.ReservationRepository;
 using MediatR;
 using System;
 using System.Collections.Generic;

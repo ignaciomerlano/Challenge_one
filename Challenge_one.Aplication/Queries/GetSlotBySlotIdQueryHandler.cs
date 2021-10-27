@@ -6,21 +6,20 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
 namespace Challenge_one.Aplication.Queries
 {
-    class GetSlotByIdQueryHandler : IRequestHandler<GetSlotByIdQuery, Slot>
+    public class GetSlotBySlotIdQueryHandler : IRequestHandler<GetSlotBySlotIdQuery, Slot>
     {
         private readonly ISlotRepository _slotRepository;
 
-        public GetSlotByIdQueryHandler(ISlotRepository slotRepository)
+        public GetSlotBySlotIdQueryHandler(ISlotRepository slotRepository)
         {
             _slotRepository = slotRepository;
         }
 
-        public async Task<Slot> Handle(GetSlotByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Slot> Handle(GetSlotBySlotIdQuery request, CancellationToken cancellationToken)
         {
-            return await _slotRepository.GetSlotById(request.Id);
+            return await _slotRepository.GetSlotBySlotId(request.SlotId);
         }
     }
 }

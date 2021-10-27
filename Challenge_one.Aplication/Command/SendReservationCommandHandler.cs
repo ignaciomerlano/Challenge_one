@@ -32,24 +32,25 @@ namespace Challenge_one.Aplication.Command
             var availableSlotsQuery = new GetAvailableSlotsQuery();
             List<Slot> availableSlots = await _mediator.Send(availableSlotsQuery);
 
-            if (!availableSlots.Exists(x => x.Id == request.Reservation.Slot.Id))
+            if (!availableSlots.Exists(x => x.SlotId == request.Reservation.Slot.SlotId))
             {
-                return new HttpResponseMessage { StatusCode = System.Net.HttpStatusCode.FailedDependency, ReasonPhrase = "Error: The selected Slot is not Available." };
+                return new HttpResponseMessage { StatusCode = System.Net.HttpStatusCode.NotFound, ReasonPhrase = "Error: The selected Slot is not Available." };
             }
             else if (availableSlots.Count <= 0)
             {
-                return new HttpResponseMessage { StatusCode = System.Net.HttpStatusCode.FailedDependency, ReasonPhrase = "Error: There are no Available Slots at the moment." };
+                return new HttpResponseMessage { StatusCode = System.Net.HttpStatusCode.NotFound, ReasonPhrase = "Error: There are no Available Slots at the moment." };
             }
 
             //Update slot to IsAvailable = false
-            var slotQuery = new GetSlotByIdQuery(request.Reservation.Slot.Id);
+            var slotQuery = new GetSlotBySlotIdInternalQuery(request.Reservation.Slot.SlotId);
             var slot = await _mediator.Send(slotQuery);
             slot.IsAvailable = false;
             slot.UpdatedDate = DateTime.Now;
-            var slotCommand = new SendSlotCommand(slot);
-            await _mediator.Send(slotCommand);
+            var updateSlotCommand = new SendUpdateSlotCommand(slot);
+            await _mediator.Send(updateSlotCommand);
 
             //Save reservation
+            request.Reservation.Slot = slot;
             await _reservationQueue.SendAddReservation(request.Reservation);
 
             return new HttpResponseMessage { StatusCode = System.Net.HttpStatusCode.OK};
