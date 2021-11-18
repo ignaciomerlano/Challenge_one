@@ -14,3 +14,12 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.pdb
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.csprojAssemblyReference.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\bin\Debug\netcoreapp3.1\Challenge_one.Model.deps.json
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\bin\Debug\netcoreapp3.1\Challenge_one.Model.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\bin\Debug\netcoreapp3.1\Challenge_one.Model.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.AssemblyInfoInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.AssemblyInfo.cs
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.csproj.CoreCompileInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Model\obj\Debug\netcoreapp3.1\Challenge_one.Model.pdb

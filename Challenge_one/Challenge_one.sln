@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.ManagerQueue"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge_one.MsSql", "Challenge_one.MsSql\Challenge_one.MsSql.csproj", "{A910B6F1-EF25-4657-AB36-40D654D31E88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestChallenge_one", "XUnitTestChallenge_one\XUnitTestChallenge_one.csproj", "{291B3CBF-6C27-42DD-A47B-92AB614356BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestChallenge_one", "XUnitTestChallenge_one\XUnitTestChallenge_one.csproj", "{291B3CBF-6C27-42DD-A47B-92AB614356BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8442AA8F-47FF-4A4D-860A-EB9A3798EDBF}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\firstWorkflow.yml = ..\.github\workflows\firstWorkflow.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

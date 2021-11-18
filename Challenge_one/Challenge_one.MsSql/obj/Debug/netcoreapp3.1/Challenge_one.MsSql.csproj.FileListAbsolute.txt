@@ -20,3 +20,16 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.csproj.CopyComplete
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.deps.json
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\bin\Debug\netcoreapp3.1\Challenge_one.MsSql.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\bin\Debug\netcoreapp3.1\Challenge_one.Model.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\bin\Debug\netcoreapp3.1\Challenge_one.Model.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.csproj.AssemblyReference.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.AssemblyInfoInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.AssemblyInfo.cs
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.csproj.CoreCompileInputs.cache
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.csproj.CopyComplete
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.dll
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.MsSql\obj\Debug\netcoreapp3.1\Challenge_one.MsSql.pdb

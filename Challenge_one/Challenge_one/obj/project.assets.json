@@ -1910,7 +1910,7 @@
   },
   "packageFolders": {
     "C:\\Users\\ignacio.merlano\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1922,10 +1922,11 @@
       "outputPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one\\Challenge_one\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\ignacio.merlano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1938,6 +1939,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj": {
               "projectPath": "C:\\Users\\ignacio.merlano\\Desktop\\Training .NET\\Projects\\Challenge_one\\Challenge_one\\Challenge_one.Aplication\\Challenge_one.Aplication.csproj"
@@ -1956,6 +1958,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Versioning.ApiExplorer": {
             "target": "Package",
@@ -1996,7 +1999,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   },
