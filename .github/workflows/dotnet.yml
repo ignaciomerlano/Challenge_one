@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies 
       run: dotnet restore Challenge_one/Challenge_one.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build Challenge_one/Challenge_one.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test Challenge_one/Challenge_one.sln --no-build --verbosity normal
