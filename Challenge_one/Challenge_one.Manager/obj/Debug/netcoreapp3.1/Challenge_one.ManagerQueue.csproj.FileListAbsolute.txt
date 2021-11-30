@@ -192,7 +192,6 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\bin\Debug\netcoreapp3.1\Challenge_one.Model.pdb
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.AssemblyInfoInputs.cache
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.AssemblyInfo.cs
-C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.csproj.CopyComplete
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.pdb
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Manager\obj\Debug\netcoreapp3.1\Challenge_one.ManagerQueue.csproj.AssemblyReference.cache

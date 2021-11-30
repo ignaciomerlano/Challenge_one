@@ -222,7 +222,6 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\staticwebassets\Challenge_one.StaticWebAssets.xml
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\scopedcss\bundle\Challenge_one.styles.css
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\Challenge_one.RazorTargetAssemblyInfo.cache
-C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\Challenge_one.csproj.CopyComplete
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\Challenge_one.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\Challenge_one.pdb
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one\obj\Debug\netcoreapp3.1\Challenge_one.genruntimeconfig.cache
