@@ -9,7 +9,7 @@ create table slots(
 	Number int,
 	IsAvailable bit,
 	UpdatedDate DateTime,
-	CreateDate DateTime,
+	CreatedDate DateTime,
 )
 GO
 

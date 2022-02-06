@@ -35,7 +35,6 @@ namespace Challenge_one.Aplication.Extensions
             }
 
 
-
             services.AddMediatR(typeof(IApplicationAnchor));
             services.AddScoped<ISlotQueue, SlotQueue.SlotQueue>();
             services.AddScoped<IUpdateSlotQueue, UpdateSlotQueue>();

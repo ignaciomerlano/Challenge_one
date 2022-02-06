@@ -3,6 +3,7 @@ using Challenge_one.Aplication.Queries;
 using Challenge_one.Model;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,12 @@ namespace Challenge_one.Controllers
     public class SlotController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger _logger;
 
-        public SlotController(IMediator mediator)
+        public SlotController(IMediator mediator, ILogger logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpPost]
@@ -42,6 +45,7 @@ namespace Challenge_one.Controllers
         [HttpGet]
         public async Task<List<Slot>> GetSlots()
         {
+            _logger.Information("ESTO ES UN TEST");
             var query = new GetSlotsQuery();
             return await _mediator.Send(query);
         }

@@ -1,0 +1,37 @@
+2022-02-04 11:58:52.081 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-04 11:58:52.126 -03:00 [INF] Hosting environment: Development
+2022-02-04 11:58:52.127 -03:00 [INF] Content root path: C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one
+2022-02-04 11:58:52.164 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/index.html  
+2022-02-04 11:58:52.286 -03:00 [INF] Request finished in 123.8334ms 200 text/html;charset=utf-8
+2022-02-04 11:58:52.631 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/v1/swagger.json  
+2022-02-04 11:58:52.808 -03:00 [INF] Request finished in 176.3622ms 200 application/json;charset=utf-8
+2022-02-04 12:04:44.814 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-04 12:04:44.866 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/index.html  
+2022-02-04 12:04:44.880 -03:00 [INF] Hosting environment: Development
+2022-02-04 12:04:44.880 -03:00 [INF] Content root path: C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one
+2022-02-04 12:04:45.075 -03:00 [INF] Request finished in 213.8609ms 200 text/html;charset=utf-8
+2022-02-04 12:04:45.417 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/v1/swagger.json  
+2022-02-04 12:04:45.681 -03:00 [INF] Request finished in 264.4041ms 200 application/json;charset=utf-8
+2022-02-04 12:04:54.302 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/v1/Slot/GetSlots  
+2022-02-04 12:04:54.312 -03:00 [INF] Executing endpoint 'Challenge_one.Controllers.SlotController.GetSlots (Challenge_one)'
+2022-02-04 12:04:54.343 -03:00 [INF] Route matched with {action = "GetSlots", controller = "Slot"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Challenge_one.Model.Slot]] GetSlots() on controller Challenge_one.Controllers.SlotController (Challenge_one).
+2022-02-04 12:04:54.349 -03:00 [INF] ESTO ES UN TEST
+2022-02-04 12:04:55.045 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Challenge_one.Model.Slot, Challenge_one.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-02-04 12:04:55.060 -03:00 [INF] Executed action Challenge_one.Controllers.SlotController.GetSlots (Challenge_one) in 712.0452ms
+2022-02-04 12:04:55.062 -03:00 [INF] Executed endpoint 'Challenge_one.Controllers.SlotController.GetSlots (Challenge_one)'
+2022-02-04 12:04:55.062 -03:00 [INF] Request finished in 761.064ms 200 application/json; charset=utf-8
+2022-02-04 12:10:10.458 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-04 12:10:10.503 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/index.html  
+2022-02-04 12:10:10.533 -03:00 [INF] Hosting environment: Development
+2022-02-04 12:10:10.533 -03:00 [INF] Content root path: C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one
+2022-02-04 12:10:10.679 -03:00 [INF] Request finished in 181.0805ms 200 text/html;charset=utf-8
+2022-02-04 12:10:10.892 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/docs/v1/swagger.json  
+2022-02-04 12:10:11.090 -03:00 [INF] Request finished in 198.5281ms 200 application/json;charset=utf-8
+2022-02-04 12:10:15.336 -03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44357/v1/Slot/GetSlots  
+2022-02-04 12:10:15.344 -03:00 [INF] Executing endpoint 'Challenge_one.Controllers.SlotController.GetSlots (Challenge_one)'
+2022-02-04 12:10:15.369 -03:00 [INF] Route matched with {action = "GetSlots", controller = "Slot"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Challenge_one.Model.Slot]] GetSlots() on controller Challenge_one.Controllers.SlotController (Challenge_one).
+2022-02-04 12:10:15.373 -03:00 [INF] ESTO ES UN TEST
+2022-02-04 12:10:15.994 -03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Challenge_one.Model.Slot, Challenge_one.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-02-04 12:10:16.024 -03:00 [INF] Executed action Challenge_one.Controllers.SlotController.GetSlots (Challenge_one) in 649.4107ms
+2022-02-04 12:10:16.026 -03:00 [INF] Executed endpoint 'Challenge_one.Controllers.SlotController.GetSlots (Challenge_one)'
+2022-02-04 12:10:16.027 -03:00 [INF] Request finished in 691.5373ms 200 application/json; charset=utf-8

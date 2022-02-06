@@ -36,6 +36,6 @@ C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.AssemblyInfoInputs.cache
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.AssemblyInfo.cs
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.csproj.CoreCompileInputs.cache
-C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.csproj.CopyComplete
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.dll
 C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.pdb
+C:\Users\ignacio.merlano\Desktop\Training .NET\Projects\Challenge_one\Challenge_one\Challenge_one.Aplication\obj\Debug\netcoreapp3.1\Challenge_one.Aplication.csproj.CopyComplete
